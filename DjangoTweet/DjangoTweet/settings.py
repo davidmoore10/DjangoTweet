@@ -23,6 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
+CLIENT_KEY = 'YmNJeERrcmpjLUdHTHZ4UXJqVjY6MTpjaQ'
+CLIENT_SECRET_KEY = os.environ['CLIENT_SECRET_KEY']
+API_KEY = 'AghrUYqqEjbwt7hFujHRXYTcQ'
+API_SECRET_KEY = os.environ['TWITTER_SECRET_KEY']
+ACCESS_TOKEN = '1610319530856775683-qkHMHDESlbBJd54WtNb3MYaO8hMaet'
+SECRET_ACCESS_TOKEN = os.environ['SECRET_ACCESS_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

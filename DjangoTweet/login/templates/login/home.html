@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitter Authentication</title>
+  </head>
+  <body>
+    <h1>Welcome to the Twitter App</h1>
+    <p>Press the button below to authenticate with your Twitter account</p>
+    <form method="post" action="{% url 'authenticate' %}">
+      {% csrf_token %}
+      <input type="submit" value="Authenticate with Twitter" />
+    </form>
+  </body>
+</html>

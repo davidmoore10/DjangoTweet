@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tweet Failure</title>
+  </head>
+  <body>
+    <h1>ERROR</h1>
+    <p>
+      Oh no, something has gone wrong when you tried to tweet. Let's go back to
+      the home page.
+    </p>
+    <form method="post" action="{% url 'home' %}">
+      {% csrf_token %}
+      <input type="submit" value="Back to home" />
+    </form>
+  </body>
+</html>
